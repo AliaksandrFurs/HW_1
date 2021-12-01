@@ -2,7 +2,6 @@ package Task_04.Entities;
 
 public class Peugeot extends Vehicle {
 
-	//private final static String name = EntitiesNameEnum.PEUGEOT.toString();
 	
 	public Peugeot() {
 		

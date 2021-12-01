@@ -15,7 +15,6 @@ public class Main {
 	public static void main(String[] args){
 		
 		AutoPark myAutoPark = new AutoPark();
-
 		MainVehicleDAO mainVehicleDao = new MainVehicleDAO();
 
 		mainVehicleDao.add(myAutoPark, new AudyA6_Car (123, "FULL", 25000, "MyCompany"));
@@ -23,7 +22,7 @@ public class Main {
 		mainVehicleDao.add(myAutoPark, new Peugeot_508_Car(459, "FULL", 13000, "NotMyCompany"));
 		mainVehicleDao.add(myAutoPark, new DusterCar(756, "STANDARD", 10000, "MyCompany"));
 		
-		System.out.println("Первый автомобиль по критериям: ");
+		System.out.println("First vehicle according to criteria: ");
 		Stream <Vehicle> streamVehicle = myAutoPark.getAutoPark().stream();
 		Optional <Vehicle> filteredSpeed = streamVehicle.filter(Vehicle -> Vehicle.getMaxSpeed()<240)
 				.findAny();
@@ -34,7 +33,7 @@ public class Main {
 		for (Vehicle _vehicle : myAutoPark.getAutoPark()) {
 			sum +=_vehicle.getPrice();
 		}
-		System.out.println("Сумма стоимостей автомобилей: "+ sum + " долларов");
+		System.out.println("Sum auto: "+ sum + " USD");
 		
 		
 	}

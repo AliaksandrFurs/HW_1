@@ -2,7 +2,6 @@ package Task_04.Entities;
 
 public abstract class Renault extends Vehicle {
 	
-	//private final static String name = EntitiesNameEnum.RENAULT.toString();
 	
 	
 	public Renault() {

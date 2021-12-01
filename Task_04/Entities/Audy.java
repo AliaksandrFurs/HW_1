@@ -2,7 +2,6 @@ package Task_04.Entities;
 
 public class Audy extends Vehicle{
 	
-	//private final static String name = EntitiesNameEnum.AUDY.toString();
 	
 	public Audy() {
 		
